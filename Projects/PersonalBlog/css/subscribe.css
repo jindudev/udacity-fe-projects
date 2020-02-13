@@ -64,19 +64,7 @@ input[type=text], textarea{
     display: table;
     clear: both;
   }
-  button{
-    font-size:14px;
-    background-color: rgb(150, 144, 141);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding:11px 20px;
-    
-}
-button:hover{
-    background-color: rgb(49, 91, 138);
-    color: honeydew;
-}
+
   @media screen and (max-width: 600px) {
     .col1, .col2, input[type=submit] {
       width: 100%;

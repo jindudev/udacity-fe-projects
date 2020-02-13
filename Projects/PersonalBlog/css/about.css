@@ -10,9 +10,11 @@ body{
     "ti"
     "im"
     "cn"
+    "ft"
 }
 .box{
     padding-left: 50px;
+    border: none;
     
 }
 
@@ -27,9 +29,9 @@ body{
 }
 
 #image{
-    grid-area: im;
-   
+    grid-area: im; 
 }
+
 img {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -43,15 +45,35 @@ img {
     grid-area: cn;
     font-size: 25px;
 }
+#footer{
+    grid-area: ft;
+    padding: 20px 45% ;
+    
+}
+
+button{
+    font-size:15px;
+    background-color: rgb(136, 151, 161);
+    border: none;
+    border-radius: 50px;
+    padding:9px 20px;
+    
+}
+button:hover{
+    background-color: rgb(49, 91, 138);
+    color: honeydew;
+}
+
 @media(min-width:900px){
     .container{
         display: grid;
         grid-template-columns: 350px 400px;
-        grid-template-rows: 250px 700px;
+        grid-template-rows: 250px 700px 100px;
         margin: 100px;
         grid-template-areas: 
                     "ti ti ti ti ti ti "
-                    "im im im im im cn";
+                    "im im im im im cn"
+                    "ft ft ft ft ft ft";
     }
     #title{
         grid-area: ti;
