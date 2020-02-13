@@ -1,0 +1,13 @@
+img{
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+h1{
+    margin: 1.66%;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(168, 209, 236);
+    width:30%;
+    font-size: 50px;
+    color: rgb(168, 209, 236);
+}

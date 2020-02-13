@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i&display=swap');
+body{
+    background-color: rgb(240, 237, 226);
+    border : 5px solid grey;
+    padding: 20px;
+    max-width:900px;
+    width: 80%;
+    margin: 20px auto;
+    font-family: source sans pro;
+}
+
+p{
+    padding-top: 20px;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(168, 209, 236);
+    padding-left: 30%;
+    margin-bottom: 5px;
+}
+.date{
+    text-transform: uppercase;
+    color: rgb(168, 209, 236);
+    padding-left: 40%;
+ }
+img{
+    width:60%;
+    padding: 20px 20%;
+}
+.button{
+    padding-left: 45%;
+}
+button{
+    font-size:15px;
+    background-color: rgb(136, 151, 161);
+    border: none;
+    border-radius: 50px;
+    padding:9px 20px;
+    
+}
+button:hover{
+    background-color: rgb(49, 91, 138);
+    color: honeydew;
+}

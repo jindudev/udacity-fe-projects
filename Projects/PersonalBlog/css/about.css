@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i&display=swap');
+body{
+    background-color:rgb(240, 237, 226) ;
+}
+.container{
+    display:grid;
+    grid-template-columns: 400px 300px 300px;
+    grid-template-rows: 250px 500px 700px;
+    grid-template-areas:
+    "ti"
+    "im"
+    "cn"
+}
+.box{
+    padding-left: 50px;
+    
+}
+
+
+#title{
+    grid-area: ti;
+    font-size: 30px;
+    padding-left: 40% ;
+    padding-top:20px ;
+    text-transform: uppercase;
+    color:rgb(168, 209, 236);
+}
+
+#image{
+    grid-area: im;
+   
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: 10%;
+    width: 100%;
+    height: 90%;
+  }
+
+
+#content{
+    grid-area: cn;
+    font-size: 25px;
+}
+@media(min-width:900px){
+    .container{
+        display: grid;
+        grid-template-columns: 350px 400px;
+        grid-template-rows: 250px 700px;
+        margin: 100px;
+        grid-template-areas: 
+                    "ti ti ti ti ti ti "
+                    "im im im im im cn";
+    }
+    #title{
+        grid-area: ti;
+        font-size: 50px;
+        padding-left: 35% ;
+        text-transform: uppercase;
+        color:rgb(168, 209, 236);
+    }
+    
+    img {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-left: 10%;
+        width: 80%;
+        height: 95%;
+      }
+
+    
+
+}
+
