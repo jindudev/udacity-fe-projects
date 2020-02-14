@@ -1,7 +1,49 @@
-img{
-    width: 30%;
-    float: left;
-    margin: 1.66%;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i&display=swap');
+.container{
+    display:grid;
+    grid-template-columns: 500px 300px 300px;
+    grid-template-rows: 250px  1fr 250px;
+    grid-template-areas:
+    "hd"
+    "cn"
+    "ft"
+}
+.box{
+    border: none;
+    padding: 30px;
+}
+#header{
+    grid-area: hd;
+    background-color:rgb(168, 209, 236);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    color: rgb(107, 100, 100);
+    text-transform: uppercase;
+    font-size: 50px;
+    }
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    }
+li , a  {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(107, 100, 100);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(64, 168, 197);
+    text-decoration: underline;
+}
+#gallery{
+    grid-area: cn;
 }
 h1{
     margin: 1.66%;
@@ -11,3 +53,58 @@ h1{
     font-size: 50px;
     color: rgb(168, 209, 236);
 }
+img {
+     width: 50%;
+     margin-bottom: 20px;
+  }
+
+#footer{
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(168, 209, 236);
+    align-items: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(107, 100, 100);
+}
+.links img{
+    width:30px;
+    height:30px;
+    border:0;
+}
+@media(min-width:700px){
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 50px 300px 300px 50px;
+        grid-template-rows: 150px 1fr 120px;
+        grid-template-areas: 
+                    "hd hd hd hd hd hd "
+                    "cn cn cn cn cn cn"
+                    "ft ft ft ft ft ft";
+    }
+    #header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    .logo{
+        padding-left: 55px;
+    }    
+    li{
+        padding: 0px 30px;
+    }
+    img {
+        width: 40%;
+        float: left;
+        margin: 2%;
+     }
+    #footer{
+        flex-direction: row;
+        justify-content: center;
+    } 
+}
+

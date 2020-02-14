@@ -8,79 +8,103 @@
     <link rel="stylesheet" href="C:\Dev\Udacity\udacity-fe-projects\Projects\PersonalBlog\css\subscribe.css">
 </head>
 <body>
-    <div class ="header">
-        <div>
-            <h1>Email sign up form</h1>
-            <p>We would love to be in touch with you! Sign up to receive emails from us!</p>
+    <div class="container">
+        <div class="box" id="header">
+            <h1 class ="logo">jindu_Blog</h1>                                                                     
+                <nav>
+                    <ul class="nav">
+                        <li class="item"><a href="blog.html">Home</a></li>
+                        <li class="item"><a href="gallery.html">Gallery</a></li>
+                        <li class ="item"><a href="abt.html">About Me</a></li>
+                        <li class ="item"><a href="subscribe.html">Subscribe</a></li>
+                    </ul>
+                </nav>
         </div>
-        <div>
-            <h2>Please complete all information below:</h2>
-        </div>
-    </div>
-    <div class= "container">
-        <form action="">
-            <div class="row">
-                <div class="col1">
-                    <label for="first">First Name :</label>
-                </div>
-                <div class="col2">
-                    <input id ="first" type="text" placeholder = "John" required>
-                </div>
-            </div >
-            <div class="row">
-                <div class="col1">
-                    <label for="last">Last Name :</label>
-                </div>
-                <div class="col2">
-                    <input id ="last" type="text" placeholder = "sharma" required>
-                </div>
-            </div >
-            <div class="row">
-                <div class="col1">
-                    <label for="email">Email :</label>
-                </div>
-                <div class="col2">
-                    <input id ="email" type="text" >
-                </div>
-            </div >
-            <div class="row">
-                <div class="col1">
-                    <label for="phone">Phone :</label>
-                </div>
-                <div class="col2">
-                    <input id ="phone" type="text" >
-                </div>
-            </div >
-            <div class="row">
-                <div class="col1">
-                    <label for="address">Address :</label>
-                </div>
-                <div class="col2">
-                    <input id ="address" type="text" placeholder="street address">
-                    <input type="text" name="street" id ="street" placeholder="Street Address line 2">
-                    <input type="text" name="city" id="city" placeholder="City">
-                    <input type="text" name="state" id="state" placeholder="State">
-                    <input type="text" name="Zip" id="zip" placeholder="Zip-Code">
-                </div>
-            </div >
-            <div class="row">
-                <div class="col1">
-                    <label for="comments">Comments :</label>
-                </div>
-                <div class="col2">
-                    <textarea id="comments" name="comments" placeholder="Comments..."  cols="30" rows="10"></textarea>
-                </div>
-            </div >
-            <div class="row">
-                  <input type="submit" value="Submit">
-                  
+        <div  class ="box"id ="side">
+            <div>
+                <h1>Email sign up form</h1>
+                <p>We would love to be in touch with you! Sign up to receive emails from us!</p>
             </div>
-       </form>
-    </div>
-    
-        
-
-        
+            <div>
+                <h2>Please complete all information below:</h2>
+            </div>
+        </div>
+        <div class= "box" id="subscribe">
+            <form action="">
+                <div class="row">
+                    <div class="col1">
+                        <label for="first">First Name :</label>
+                    </div>
+                    <div class="col2">
+                        <input id ="first" type="text" placeholder = "John" required>
+                    </div>
+                </div >
+                <div class="row">
+                    <div class="col1">
+                        <label for="last">Last Name :</label>
+                    </div>
+                    <div class="col2">
+                        <input id ="last" type="text" placeholder = "sharma" required>
+                    </div>
+                </div >
+                <div class="row">
+                    <div class="col1">
+                        <label for="email">Email :</label>
+                    </div>
+                    <div class="col2">
+                        <input id ="email" type="text" >
+                    </div>
+                </div >
+                <div class="row">
+                    <div class="col1">
+                        <label for="phone">Phone :</label>
+                    </div>
+                    <div class="col2">
+                        <input id ="phone" type="text" >
+                    </div>
+                </div >
+                <div class="row">
+                    <div class="col1">
+                        <label for="address">Address :</label>
+                    </div>
+                    <div class="col2">
+                        <input id ="address" type="text" placeholder="street address">
+                        <input type="text" name="street" id ="street" placeholder="Street Address line 2">
+                        <input type="text" name="city" id="city" placeholder="City">
+                        <input type="text" name="state" id="state" placeholder="State">
+                        <input type="text" name="Zip" id="zip" placeholder="Zip-Code">
+                    </div>
+                </div >
+                <div class="row">
+                    <div class="col1">
+                        <label for="comments">Comments :</label>
+                    </div>
+                    <div class="col2">
+                        <textarea id="comments" name="comments" placeholder="Comments..."  cols="30" rows="10"></textarea>
+                    </div>
+                </div >
+                <div class="row">
+                      <input type="submit" value="Submit">
+                      
+                </div>
+           </form>
+        </div>
+        <div class="box" id ="footer">
+            <div class="box" id="follow">Follow Me: </div>
+            <div class="links">
+                <a href="https://www.instagram.com/">
+                    <img alt="instagram" src="../PersonalBlog/images/instagram.webp" >
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img alt="facebook" src="../PersonalBlog/images/facebook.png">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img alt="linkedin" src="../PersonalBlog/images/linkedln.png">
+                </a>
+            </div>  
+        </div>
+                                          
+                   
 
 </body>
 </html> 

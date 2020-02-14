@@ -1,54 +1,136 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
-body{
-    background-color: rgb(212, 222, 230);
+
+.container{
+    display:grid;
+    grid-template-columns: 500px 300px 300px;
+    grid-template-rows: 250px 250px 1fr 250px;
+    grid-template-areas:
+    "hd"
+    "sd"
+    "cn"
+    "ft"
 }
-.header ,label{
+.box{
+    border: none;
+    padding: 30px;
+}
+#header{
+    grid-area: hd;
+    background-color:rgb(168, 209, 236);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    color: rgb(107, 100, 100);
+    text-transform: uppercase;
+    font-size: 50px;
+    }
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    }
+li , a  {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: rgb(82, 77, 77);
+    color: rgb(107, 100, 100);
     text-decoration: none;
-    text-align: center;
 }
-h1{
-    font-size: 30px;
-    text-transform: uppercase;
+a:hover{
+    color: rgb(64, 168, 197);
+    text-decoration: underline;
 }
-h2{
-    font-size: 25px;
+#side{
+  grid-area: sd;
+  background-color: rgb(212, 222, 230);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(82, 77, 77);
+  text-decoration: none;
+  text-align: center;
+}
+#subscribe{
+  grid-area: cn;
+  padding-left: 30%;
+  background-color: rgb(212, 222, 230);
+}
+label{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(82, 77, 77);
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 12px 12px 35px;
+  display: inline-block;
 }
 
- label{
-     padding: 12px 12px 12px 35px;
-     display: inline-block;
-    
- }    
 input[type=submit] {
-    background-color: rgb(150, 144, 141);
-    color: white;
-    padding: 12px 20px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 25%;
-    margin-top: 5px;
-    
+  background-color: rgb(150, 144, 141);
+  color: white;
+  padding: 12px 20px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-top: 5px;
+  
 }
 input[type=text], textarea{
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-  .container{
-    border-radius: 5px;
-    padding: 20px;
-    display: inherit;
-    padding-left: 30%;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
 
+#footer{
+  grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(168, 209, 236);
+  align-items: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(107, 100, 100);
+}
+.links img{
+  width:30px;
+  height:30px;
+  border:0;
+}
+@media(min-width:700px){
+  .container{
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 50px 300px 300px 50px;
+      grid-template-rows: 100px 200px 1fr 80px;
+      grid-template-areas: 
+                  "hd hd hd hd hd hd "
+                  "sd sd sd sd sd sd"
+                  "cn cn cn cn cn cn"
+                  "ft ft ft ft ft ft";
   }
+  #header{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10px;
+  }
+  .logo{
+      padding-left: 55px;
+  }    
+  li{
+      padding: 0px 30px;
+  }
+  
   .col1 {
     float: left;
     width: 25%;
@@ -64,11 +146,13 @@ input[type=text], textarea{
     display: table;
     clear: both;
   }
+  
+  #footer{
+      flex-direction: row;
+      justify-content: center;
+  } 
+}
 
-  @media screen and (max-width: 600px) {
-    .col1, .col2, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
 
-  }
+
+
